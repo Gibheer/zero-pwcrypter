@@ -1,0 +1,14 @@
+pwcrypter
+=========
+
+This is a small script to generate crypted passwords for use in openindiana
+sysidcfg files or shadow files.
+
+how to use
+----------
+
+```
+pwgen 12 | pwcrypter.py
+```
+
+That's it. Have fun.
