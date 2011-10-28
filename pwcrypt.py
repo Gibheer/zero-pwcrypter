@@ -4,6 +4,7 @@
 # the first line is the password in cleartext
 # the second line is the crypted version of the password
 
+from __future__ import print_function
 import sys
 import crypt
 import string
@@ -15,5 +16,5 @@ for i in range(3):
   seed = seed + random.choice(chars)
 for line in sys.stdin:
   line = line.strip()
-  print line
-  print crypt.crypt(line, seed)
+  print(line)
+  print(crypt.crypt(line, seed))
